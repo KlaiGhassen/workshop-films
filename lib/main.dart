@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:workshop/FilmCardItem.dart';
-import 'package:workshop/Gstore.dart';
+import 'package:workshop/componentes/FilmCardItem.dart';
+import 'package:workshop/screens/FilmDetail.dart';
+import 'package:workshop/screens/GstoreGrid.dart';
+import 'package:workshop/screens/GstoreList.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: Gstore(),
+      home: FilmDetail(),
     );
   }
 }
